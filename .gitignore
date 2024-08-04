@@ -1,0 +1,50 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore macOS folder attributes
+.DS_Store
+
+# Ignore log files and temp files.
+/log
+/tmp
+/coverage
+/spec/reports
+/spec/examples.txt
+
+# Ignore build and package directories
+/pkg
+/build
+
+# Ignore editor specific files
+*~
+*.swp
+*.swo
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore environment settings files
+.env
+
+# Ignore RubyMotion specific files
+.dat*
+.repl_history
+build/
+*.bridgesupport
+build-iPhoneOS/
+build-iPhoneSimulator/
+
+# Ignore Pods directory if using CocoaPods
+/vendor/Pods
+
+# Ignore documentation and yard files
+/.yardoc
+/_yardoc
+/doc
+/rdoc
+
+# Ignore vendored files
+/vendor/bundle
+
+# Ignore rubocop remote config files
+.rubocop-https?--*
