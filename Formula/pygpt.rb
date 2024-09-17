@@ -5,14 +5,12 @@ class Pygpt < Formula
     desc "Command line tool for pygpt"
     homepage "https://github.com/shiro-46-call/pygpt"
     license "MIT"
-    url "https://github.com/shiro-46-call/pygpt/releases/download/v#{HOMEBREW_PYGPT_VERSION}/pygpt-#{HOMEBREW_PYGPT_VERSION}-darwin-amd64.tar.gz"
+    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.0/pygpt-1.0.0.tar.gz"
     version HOMEBREW_PYGPT_VERSION
     sha256 "a2dd2d3edbc6df3e353168d073b251e5924ef51c595142608a1806f639e6d46f" 
     depends_on "python@3.12"
 
     def install
-        prefix.install "README.md"
-        prefix.install "LICENSE"
         prefix.install "program"
         prefix.install "Model"
         prefix.install "View"
