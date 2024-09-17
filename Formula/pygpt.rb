@@ -11,8 +11,6 @@ class Pygpt < Formula
     depends_on "python@3.12"
 
     def install
-        prefix.install "README.md"
-        prefix.install "LICENSE"
         prefix.install "program"
         prefix.install "Model"
         prefix.install "View"
