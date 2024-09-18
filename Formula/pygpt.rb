@@ -10,16 +10,15 @@ class Pygpt < Formula
     depends_on "python@3.12"
 
     def install
-        prefix.install "program"
-        prefix.install "Model"
-        prefix.install "View"
-        prefix.install "Logger.py"
-        prefix.install "Api.py"
-        prefix.install "Compile.py"
-        prefix.install "Example.py"
-        prefix.install "Model.py"
+        prefix.install "README.md"
+        prefix.install "LICENSE"
         prefix.install "install.sh"
-        bin.install "bin/pygpt"
+
+        (prefix/"Model").install Dir["program/Model/*"]
+        (prefix/"View").install Dir["program/View/*"]
+        (prefix/"bin").install "program/bin/pygpt"
+
+        bin.install_symlink "#{prefix}/bin/pygpt"
     end
 
     def post_install
