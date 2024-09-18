@@ -1,4 +1,3 @@
-# coding: utf-8
 HOMEBREW_PYGPT_VERSION = "1.0.0"
 
 class Pygpt < Formula
@@ -7,7 +6,7 @@ class Pygpt < Formula
     license "MIT"
     url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.0/pygpt-1.0.0.tar.gz"
     version HOMEBREW_PYGPT_VERSION
-    sha256 "a2dd2d3edbc6df3e353168d073b251e5924ef51c595142608a1806f639e6d46f" 
+    sha256 "946b3e451c06f85a02dddc3382da189e02e583806589f264b33cf72aa6a1941c" 
     depends_on "python@3.12"
 
     def install
