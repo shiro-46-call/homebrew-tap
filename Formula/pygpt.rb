@@ -29,3 +29,4 @@ class Pygpt < Formula
         assert_match "1.0.1", shell_output("#{bin}/pygpt --version")
     end
 end
+
