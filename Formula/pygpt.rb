@@ -17,11 +17,11 @@ class Pygpt < Formula
         (prefix/"View").install Dir["program/View/*"]
         (prefix/"bin").install "program/bin/pygpt"
 
-        bin.install_symlink "#{prefix}/bin/pygpt"
+        bin.install_symlink "#{prefix}/program/bin/pygpt"
     end
 
     def post_install
-        system "bash", "#{prefix}/install.sh"
+        system "#{prefix}/install.sh"
     end
 
     test do
