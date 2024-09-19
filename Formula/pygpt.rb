@@ -4,7 +4,7 @@ class Pygpt < Formula
     desc "Command line tool for pygpt"
     homepage "https://github.com/shiro-46-call/pygpt"
     license "MIT"
-    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.1/pygpt-1.0.1.tar.gz"
+    url "https://github.com/shiro-46-call/pygpt/releases/download/v.1.0.1/pygpt-1.0.1.tar.gz"
     version HOMEBREW_PYGPT_VERSION
     sha256 "fcb4ad78589883828813d61edb464298f097d70cbe7a6adb2d1b280a4b579c97" 
     depends_on "python@3.12"
