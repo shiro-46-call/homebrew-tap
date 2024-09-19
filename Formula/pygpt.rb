@@ -1,12 +1,12 @@
-HOMEBREW_PYGPT_VERSION = "1.0.0"
+HOMEBREW_PYGPT_VERSION = "1.0.1"
 
 class Pygpt < Formula
     desc "Command line tool for pygpt"
     homepage "https://github.com/shiro-46-call/pygpt"
     license "MIT"
-    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.0/pygpt-1.0.0.tar.gz"
+    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.1/pygpt-1.0.1.tar.gz"
     version HOMEBREW_PYGPT_VERSION
-    sha256 "946b3e451c06f85a02dddc3382da189e02e583806589f264b33cf72aa6a1941c" 
+    sha256 "fcb4ad78589883828813d61edb464298f097d70cbe7a6adb2d1b280a4b579c97" 
     depends_on "python@3.12"
 
     def install
@@ -26,6 +26,6 @@ class Pygpt < Formula
     end
 
     test do
-        assert_match "1.0.0", shell_output("#{bin}/pygpt --version")
+        assert_match "1.0.1", shell_output("#{bin}/pygpt --version")
     end
 end
