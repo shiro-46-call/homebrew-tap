@@ -12,12 +12,12 @@ class Pygpt < Formula
         prefix.install "README.md"
         prefix.install "LICENSE"
         prefix.install "install.sh"
-        prefix.install "Example.py"
-        prefix.install "Logger.py"
+        prefix.install "program/Example.py"
+        prefix.install "program/Logger.py"
 
-        (prefix/"Model").install Dir["program/Model/*"]
-        (prefix/"View").install Dir["program/View/*"]
-        (prefix/"bin").install "program/bin/*"
+        (prefix/"program/Model").install Dir["program/Model/*"]
+        (prefix/"program/View").install Dir["program/View/*"]
+        (prefix/"program/bin").install "program/bin/*"
 
         bin.install_symlink "#{prefix}/bin/pygpt"
     end
