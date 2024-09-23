@@ -17,7 +17,7 @@ class Pygpt < Formula
 
         (prefix/"program/Model").install Dir["program/Model/*"]
         (prefix/"program/View").install Dir["program/View/*"]
-        (prefix/"program/bin").install "program/bin/*"
+        (prefix/"program/bin").install "program/bin/pygpt"
 
         bin.install_symlink "#{prefix}/bin/pygpt"
     end
