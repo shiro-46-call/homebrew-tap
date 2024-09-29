@@ -1,4 +1,4 @@
-HOMEBREW_PYGPT_VERSION = "1.0.2"
+HOMEBREW_PYGPT_VERSION = "1.0.3"
 
 class Pygpt < Formula
     desc "Command line tool for pygpt"
@@ -27,7 +27,7 @@ class Pygpt < Formula
     end
 
     test do
-        assert_match "1.0.2", shell_output("#{bin}/pygpt --version")
+        assert_match "1.0.3", shell_output("#{bin}/pygpt --version")
     end
 end
 
