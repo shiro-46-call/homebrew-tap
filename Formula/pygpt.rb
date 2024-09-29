@@ -4,9 +4,9 @@ class Pygpt < Formula
     desc "Command line tool for pygpt"
     homepage "https://github.com/shiro-46-call/pygpt"
     license "MIT"
-    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.2/pygpt-1.0.2.tar.gz"
+    url "https://github.com/shiro-46-call/pygpt/releases/download/v1.0.3/pygpt-1.0.3.tar.gz"
     version HOMEBREW_PYGPT_VERSION
-    sha256 "3a61a79a32900a751374126e0684178d44b8f91c68122d9dde00e076154f23f0" 
+    sha256 "51a6470c72bcdd90625e01e7d7b974cff26a61cac96d55a893be4b90d01d3557" 
 
     def install
         prefix.install "README.md"
