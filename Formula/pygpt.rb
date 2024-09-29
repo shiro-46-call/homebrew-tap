@@ -16,8 +16,6 @@ class Pygpt < Formula
         prefix.install "program/Example.py"
         prefix.install "program/Logger.py"
 
-        (prefix/"program").install "program/Example.py"
-        (prefix/"program").install "program/Logger.py"
         (prefix/"program/Model").install Dir["program/Model/*"]
         (prefix/"program/View").install Dir["program/View/*"]
         (prefix/"program/bin").install "program/bin/*"
